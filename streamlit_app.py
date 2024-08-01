@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import time
 
-st.title("Monitoring")
+st.title("Monitoring system")
 
 data_placeholder = st.empty()
 
