@@ -20,4 +20,8 @@ while True:
         st.error("Gagal memparse response JSON")
     except KeyError as e:
         st.error(f"KeyError: {e} pada response JSON")
+    except Exception as e:
+        st.error(f"Terjadi kesalahan: {e}")
+        time.sleep(10)  # Tunggu sebelum mencoba lagi
+        continue
     time.sleep(5)  # Sesuaikan waktu delay sesuai kebutuhan
