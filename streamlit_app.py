@@ -8,7 +8,7 @@ data_placeholder = st.empty()
 
 while True:
     try:
-        response = requests.get("https://tangy-pears-cover.loca.lt/random-data", timeout=5)  # Tambahkan timeout
+        response = requests.get("https://late-berries-cough.loca.lt/random-data", timeout=5)  # Tambahkan timeout
         response.raise_for_status()  # Periksa jika request berhasil
         data = response.json()  # Coba parse response sebagai JSON
         data_placeholder.write(f"Data Acak: {data['data']}")
