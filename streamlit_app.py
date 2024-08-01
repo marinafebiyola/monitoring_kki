@@ -3,10 +3,13 @@ import requests
 
 st.title("Monitoring")
 
+# URL dari local tunnel yang mengarah ke backend Flask Anda
+backend_url = "https://plenty-bobcats-travel.loca.lt/api/data"
+
 if st.button("Dapatkan Data Acak"):
     try:
         # Mengirim permintaan GET ke backend Flask
-        response = requests.get("https://plenty-bobcats-travel.loca.lt/data")
+        response = requests.get(backend_url)
         # Memeriksa apakah respons berhasil
         if response.status_code == 200:
             data = response.json()
