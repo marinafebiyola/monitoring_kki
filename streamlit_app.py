@@ -24,4 +24,4 @@ while True:
         st.error(f"Terjadi kesalahan: {e}")
         time.sleep(10)  # Tunggu sebelum mencoba lagi
         continue
-    time.sleep(5)  # Sesuaikan waktu delay sesuai kebutuhan
+    time.sleep(1)  # Sesuaikan waktu delay sesuai kebutuhan
